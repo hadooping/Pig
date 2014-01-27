@@ -1,0 +1,2 @@
+URL_data = LOAD '/home/hduser/input/URL_data' AS (user_id:chararray,url:chararray,time:chararray,ip:chararray);
+good_url = FILTER URL_data BY NOT url MATCHES '.*http://company.com\\?s+.*';
